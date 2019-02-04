@@ -1,0 +1,29 @@
+.newsitem {
+    background-color: #F8F8F9;
+    border: 1px dotted #ccc;
+    border-bottom: 0;
+    padding: 10px 40px 10px 20px;
+    font: normal 20px/1.5em Arial Verdana, sans-serif;
+    color: #888;
+}
+
+.newsitem h3 {
+    background: url("../images/icon_news.gif") no-repeat 0 50%;
+    margin: 0;
+    position: relative;
+    padding-left: 20px;
+    color: #173bd8;
+    font-weight: normal;
+}
+
+.newsitem h3 span {
+    color: #818181;
+    top: 0;
+    right: 0;
+    font: normal 10px/1.5em Arial Verdana, sans-serif;
+    color: #999;
+}
+
+.newsitem p {
+    padding-left: 20px;
+    }
