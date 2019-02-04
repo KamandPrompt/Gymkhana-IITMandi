@@ -1,7 +1,7 @@
 var newsCont = document.getElementById("news-display");
 
 var newsRequest = new XMLHttpRequest();
-newsRequest.open('GET','/news/news.json');
+newsRequest.open('GET','./news/news.json');
 newsRequest.onload = function() {
   var newsData = JSON.parse(newsRequest.responseText);
   renderHTML(newsData);
