@@ -5,24 +5,3 @@
 	padding: 0 0 3em 0;
 	position: relative;
 }
-
-#container {
-    width:100%;
-    text-align:center;
-}
-
-#left {
-    float:left;
-    margin-left: 130px;
-}
-
-#center {
-    display: inline-block;
-    margin-left: 20px;
-    }
-
-#right {
-    float:right;
-    margin-right: 130px;
-}
-
