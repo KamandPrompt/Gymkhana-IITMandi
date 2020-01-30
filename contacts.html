@@ -15,130 +15,135 @@
 	<link rel="shortcut icon" href="img/favicon.ico">
 
 	<style>
-      	/* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      	@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+		/* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+		@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 		@import url("http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
-		*, *:before, *:after {
-		  margin: 0;
-		  padding: 0;
-		  box-sizing: border-box;
+
+		*,
+		*:before,
+		*:after {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
 		}
 
-		html, body {
-		  height: 100%;
+		html,
+		body {
+			height: 100%;
 		}
 
 		body {
-		  font: 14px/1 'Open Sans', sans-serif;
-		  color: #555;
-		  background: #eee;
+			font: 14px/1 'Open Sans', sans-serif;
+			color: #555;
+			background: #eee;
 		}
 
 		h1 {
-		  padding: 50px 0;
-		  font-weight: 400;
-		  text-align: center;
+			padding: 50px 0;
+			font-weight: 400;
+			text-align: center;
 		}
 
 		p {
-		  margin: 0 0 20px;
-		  line-height: 1.5;
+			margin: 0 0 20px;
+			line-height: 1.5;
 		}
 
 		main {
-		  min-width: 320px;
-		  max-width: 900px;
-		  padding: 50px;
-		  margin: 0 auto;
-		  background: #fff;
+			min-width: 320px;
+			max-width: 900px;
+			padding: 50px;
+			margin: 0 auto;
+			background: #fff;
 		}
 
 		#content1 {
-		  display: none;
-		  padding: 20px 0 0;
-		  border-top: 1px solid #ddd;
+			display: none;
+			padding: 20px 0 0;
+			border-top: 1px solid #ddd;
 		}
 
 		#content2 {
-		  display: none;
-		  padding: 20px 0 0;
-		  border-top: 1px solid #ddd;
+			display: none;
+			padding: 20px 0 0;
+			border-top: 1px solid #ddd;
 		}
+
 		#content3 {
-		  display: none;
-		  padding: 20px 0 0;
-		  border-top: 1px solid #ddd;
+			display: none;
+			padding: 20px 0 0;
+			border-top: 1px solid #ddd;
 		}
 
 		#content4 {
-		  display: none;
-		  padding: 20px 0 0;
-		  border-top: 1px solid #ddd;
+			display: none;
+			padding: 20px 0 0;
+			border-top: 1px solid #ddd;
 		}
 
 		#content5 {
-		  display: none;
-		  padding: 20px 0 0;
-		  border-top: 1px solid #ddd;
+			display: none;
+			padding: 20px 0 0;
+			border-top: 1px solid #ddd;
 		}
 
 		input {
-		  display: none;
+			display: none;
 		}
 
 		label {
-		  display: inline-block;
-		  margin: 0 0 -1px;
-		  padding: 15px 25px;
-		  font-weight: 600;
-		  text-align: center;
-		  color: #bbb;
-		  border: 1px solid transparent;
+			display: inline-block;
+			margin: 0 0 -1px;
+			padding: 15px 25px;
+			font-weight: 600;
+			text-align: center;
+			color: #bbb;
+			border: 1px solid transparent;
 		}
 
 		label:before {
-		  font-family: fontawesome;
-		  font-weight: normal;
-		  margin-right: 10px;
+			font-family: fontawesome;
+			font-weight: normal;
+			margin-right: 10px;
 		}
 
 		label:hover {
-		  color: #888;
-		  cursor: pointer;
+			color: #888;
+			cursor: pointer;
 		}
 
-		input:checked + label {
-		  color: #555;
-		  border: 1px solid #ddd;
-		  border-top: 2px solid orange;
-		  border-bottom: 1px solid #fff;
+		input:checked+label {
+			color: #555;
+			border: 1px solid #ddd;
+			border-top: 2px solid orange;
+			border-bottom: 1px solid #fff;
 		}
 
-		#tab1:checked ~ #content1,
-		#tab2:checked ~ #content2,
-		#tab3:checked ~ #content3,
-		#tab4:checked ~ #content4,
-		#tab5:checked ~ #content5 {
-		  display: block;
+		#tab1:checked~#content1,
+		#tab2:checked~#content2,
+		#tab3:checked~#content3,
+		#tab4:checked~#content4,
+		#tab5:checked~#content5 {
+			display: block;
 		}
 
 		@media screen and (max-width: 650px) {
-		  label {
-		    font-size: 0;
-		  }
+			label {
+				font-size: 0;
+			}
 
-		  label:before {
-		    margin: 0;
-		    font-size: 18px;
-		  }
+			label:before {
+				margin: 0;
+				font-size: 18px;
+			}
 		}
+
 		@media screen and (max-width: 400px) {
-		  label {
-		    padding: 15px;
-		  }
+			label {
+				padding: 15px;
+			}
 		}
-
-    </style>
+	</style>
 	<script src="js/prefixfree.min.js"></script>
 
 </head>
@@ -146,44 +151,45 @@
 <body>
 
 	<div class="probootstrap-page-wrapper">
-			<nav class="navbar navbar-default probootstrap-navbar">
-					<div class="container">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<a class="navbar-brand" href="index.html" title="Gymkhana">StudentGymkhana-IITMandi</a>
-						</div>
-		
-						<div id="navbar-collapse" class="navbar-collapse collapse">
-							<ul class="nav navbar-nav navbar-right">
-								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="news.html">News</a></li>
-								<li><a href="technical.html">Technical</a></li>
-								<li><a href="research.html">Research</a></li>
-								<li><a href="cultural.html">Cultural</a></li>
-								<li><a href="sports.html">Sports</a></li>
-								<li><a href="literary.html">Literary</a></li>
-								<li><a href="hostel.html">Hostel</a></li>
-								<li><a href="senate.html">Senate</a></li>
-								<li class="dropdown2">
-									
-										<a href="#">More</a>
-										<div class="dropdown-content">
-											<a href="wall_of_fame.html">Wall of Fame</a>
-											---
-											<a href="contributors.html">Contributors</a>
-											---
-											<a href="contacts.html">Contacts</a>
-										</div> 
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>
+		<nav class="navbar navbar-default probootstrap-navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html" title="Gymkhana">StudentGymkhana-IITMandi</a>
+				</div>
+
+				<div id="navbar-collapse" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="technical.html">Technical</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="cultural.html">Cultural</a></li>
+						<li><a href="sports.html">Sports</a></li>
+						<li><a href="literary.html">Literary</a></li>
+						<li><a href="hostel.html">Hostel</a></li>
+						<li><a href="senate.html">Senate</a></li>
+						<li class="dropdown2">
+
+							<a href="#">More</a>
+							<div class="dropdown-content">
+								<a href="wall_of_fame.html">Wall of Fame</a>
+								---
+								<a href="contributors.html">Contributors</a>
+								---
+								<a href="contacts.html">Contacts</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
 		<section class="probootstrap-section probootstrap-section-colored">
 			<div class="container">
@@ -196,272 +202,380 @@
 		</section>
 
 		<main>
-  
-		  <input id="tab1" type="radio" name="tabs" checked>
-		  <label for="tab1">Technical Society </label>
-		    
-		  <input id="tab2" type="radio" name="tabs">
-		  <label for="tab2">Cultural Society</label>
-		    
-		  <input id="tab3" type="radio" name="tabs">
-		  <label for="tab3">Literary Society</label>
-		    
-		  <input id="tab4" type="radio" name="tabs">
-		  <label for="tab4">Sports Society</label>
 
-		  <input id="tab5" type="radio" name="tabs">
-		  <label for="tab5">Hostels</label>
+			<input id="tab1" type="radio" name="tabs" checked>
+			<label for="tab1">Technical Society </label>
 
-		    
-		  <section id="content1" >
-		            <div align="center"><p>Science & Technology Council : Dr. Hitesh Shrimali (Advisor) , Dr. Rajneesh Sharma (Co-Advisor)</p>
+			<input id="tab2" type="radio" name="tabs">
+			<label for="tab2">Cultural Society</label>
 
-		    <style type="text/css">
-				.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
-				.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
-				.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
-				.tg .tg-fa8q{font-weight:bold;font-size:16px;font-family:"Times New Roman", Times, serif !important;;text-align:center;vertical-align:top}
-				.tg .tg-lvth{font-size:16px;text-align:center;vertical-align:top}
-				.tg .tg-i6ua{background-color:#f9f9f9;font-size:13px;font-family:Georgia, serif !important;;text-align:center;vertical-align:top}
-				.tg .tg-03to{background-color:#f9f9f9;font-size:13px;font-family:Georgia, serif !important;;vertical-align:top}
-				.tg .tg-kr4b{background-color:#f9f9f9;font-style:italic;font-size:13px;font-family:Georgia, serif !important;;vertical-align:top}
-				.tg .tg-49q9{font-size:13px;font-family:Georgia, serif !important;;text-align:center;vertical-align:top}
-				.tg .tg-cver{font-size:13px;font-family:Georgia, serif !important;;vertical-align:top}
-				.tg .tg-1bro{font-style:italic;font-size:13px;font-family:Georgia, serif !important;;vertical-align:top}
-				.tg .tg-i6c6{font-family:Georgia, serif !important;;text-align:center;vertical-align:top}
-				.tg .tg-k4q0{font-family:Georgia, serif !important;;vertical-align:top}
-				.tg .tg-jnth{background-color:#f9f9f9;font-family:Georgia, serif !important;;text-align:center;vertical-align:top}
-				.tg .tg-6d98{font-size:13px;font-family:"Times New Roman", Times, serif !important;;vertical-align:top}
-				.tg .tg-e63f{background-color:#f9f9f9;font-size:13px;font-family:"Times New Roman", Times, serif !important;;vertical-align:top}
+			<input id="tab3" type="radio" name="tabs">
+			<label for="tab3">Literary Society</label>
 
-				/*section {
+			<input id="tab4" type="radio" name="tabs">
+			<label for="tab4">Sports Society</label>
+
+			<input id="tab5" type="radio" name="tabs">
+			<label for="tab5">Hostels</label>
+
+
+			<section id="content1">
+				<div align="center">
+					<p>Science & Technology Council : Dr. Srikant Srinivasan (Advisor)
+					</p>
+
+					<style type="text/css">
+						.tg {
+							border-collapse: collapse;
+							border-spacing: 0;
+							border-color: #ccc;
+						}
+
+						.tg td {
+							font-family: Arial, sans-serif;
+							font-size: 14px;
+							padding: 10px 5px;
+							border-style: solid;
+							border-width: 1px;
+							overflow: hidden;
+							word-break: normal;
+							border-color: #ccc;
+							color: #333;
+							background-color: #fff;
+						}
+
+						.tg th {
+							font-family: Arial, sans-serif;
+							font-size: 14px;
+							font-weight: normal;
+							padding: 10px 5px;
+							border-style: solid;
+							border-width: 1px;
+							overflow: hidden;
+							word-break: normal;
+							border-color: #ccc;
+							color: #333;
+							background-color: #f0f0f0;
+						}
+
+						.tg .tg-fa8q {
+							font-weight: bold;
+							font-size: 16px;
+							font-family: "Times New Roman", Times, serif !important;
+							;
+							text-align: center;
+							vertical-align: top
+						}
+
+						.tg .tg-lvth {
+							font-size: 16px;
+							text-align: center;
+							vertical-align: top
+						}
+
+						.tg .tg-i6ua {
+							background-color: #f9f9f9;
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+							;
+							text-align: center;
+							vertical-align: top
+						}
+
+						.tg .tg-03to {
+							background-color: #f9f9f9;
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+							;
+							vertical-align: top
+						}
+
+						.tg .tg-kr4b {
+							background-color: #f9f9f9;
+							font-style: italic;
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+							;
+							vertical-align: top
+						}
+
+						.tg .tg-49q9 {
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+							;
+							text-align: center;
+							vertical-align: top
+						}
+
+						.tg .tg-cver {
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+							;
+							vertical-align: top
+						}
+
+						.tg .tg-1bro {
+							font-style: italic;
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+							;
+							vertical-align: top
+						}
+
+						.tg .tg-i6c6 {
+							font-family: Georgia, serif !important;
+							;
+							text-align: center;
+							vertical-align: top
+						}
+
+						.tg .tg-k4q0 {
+							font-family: Georgia, serif !important;
+							;
+							vertical-align: top
+						}
+
+						.tg .tg-jnth {
+							background-color: #f9f9f9;
+							font-family: Georgia, serif !important;
+							;
+							text-align: center;
+							vertical-align: top
+						}
+
+						.tg .tg-6d98 {
+							font-size: 13px;
+							font-family: "Times New Roman", Times, serif !important;
+							;
+							vertical-align: top
+						}
+
+						.tg .tg-e63f {
+							background-color: #f9f9f9;
+							font-size: 13px;
+							font-family: "Times New Roman", Times, serif !important;
+							;
+							vertical-align: top
+						}
+
+						/*section {
 				  display: none;
 				  padding: 20px 0 0;
 				  border-top: 1px solid #ddd;
 				}*/
+					</style>
+					<table class="tg">
+						<tr>
+							<td class='tg-i6ua'>Name of Club<br></td>
+							<td class='tg-03to'>Club Coordinator<br></td>
+							<td class='tg-03to'>E-mail Id</td>
+							<td class='tg-03to'>Contact No.</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Faculty Advisors</td>
+							<td class='tg-03to'>E-mail ID</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Robotronics Club<br></td>
+							<td class='tg-03to'>Manpreet <br></td>
+							<td class='tg-03to'>b17091@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>7009769644</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Srikant Srinivasan</td>
+							<td class='tg-03to'>srikant@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Karan Ankit<br></td>
+							<td class='tg-03to'>b18159@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8434934890</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Piyush Goyal<br></td>
+							<td class='tg-03to'>b18077@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9354556594</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Programming Club<br></td>
+							<td class='tg-03to'>Vipul Sharma<br></td>
+							<td class='tg-03to'>b17069@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9418322955</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Sriram K</td>
+							<td class='tg-03to'>sriramk@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Dheeraj Yadav<br></td>
+							<td class='tg-03to'>b17041@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8527510168</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Yantrik Club<br></td>
+							<td class='tg-03to'>Ankit Sejwar<br></td>
+							<td class='tg-03to'>b17115@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9109390398</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Gaurav Bhutani</td>
+							<td class='tg-03to'>gaurav@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Rachit Katewa<br></td>
+							<td class='tg-03to'>null@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8619998692</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Pradeep Kumar</td>
+							<td class='tg-03to'>pradeepkumar@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Abhishek Singh<br></td>
+							<td class='tg-03to'>b18156@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8130730661</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>E-Cell<br></td>
+							<td class='tg-03to'>Ishan Dahiya <br></td>
+							<td class='tg-03to'>b18059@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8398084949</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Satvasheel Ramesh Powar</td>
+							<td class='tg-03to'>satvasheel@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Prakhar Uniyal<br></td>
+							<td class='tg-03to'>b18128@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8318631214</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Satvasheel Ramesh Powar</td>
+							<td class='tg-03to'>Satvasheel@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Space, Technology and Astronomy Cell (STAC)<br></td>
+							<td class='tg-03to'>Abhijeet Manhas<br></td>
+							<td class='tg-03to'>b18043@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8628963924</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Arnav Bhavsar</td>
+							<td class='tg-03to'>arnav@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Yash Bansod<br></td>
+							<td class='tg-03to'>b18095@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9816789676</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Arnav Bhavsar</td>
+							<td class='tg-03to'>arnav@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Shreya Lanjewar<br></td>
+							<td class='tg-03to'>b17142@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9834340089</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Society of Automotive Engineers (SAE) Collegiate<br></td>
+							<td class='tg-03to'>Aditya Nautiyal<br></td>
+							<td class='tg-03to'>b17111@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>7807104946</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Arpan Gupta</td>
+							<td class='tg-03to'>agupta@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Neelotpal Dutta<br></td>
+							<td class='tg-03to'>b16106@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>7807104946</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Atul Dhar</td>
+							<td class='tg-03to'>add@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Association for Computing Machinery (ACM) Chapter<br></td>
+							<td class='tg-03to'>Swapnil Rustagi<br></td>
+							<td class='tg-03to'>B17104@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9999862893</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Padmanabhan Rajan</td>
+							<td class='tg-03to'>padman@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Tanmay Rustagi<br></td>
+							<td class='tg-03to'>b17028@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>7807557706</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Varun Singh<br></td>
+							<td class='tg-03to'>b17110@students.iitmandi.ac</td>
+							<td class='tg-03to'>8628907720</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Nirmaan Club<br></td>
+							<td class='tg-03to'>Sanjeev Singh<br></td>
+							<td class='tg-03to'>B17022@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>7599471273</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Dericks Shukla</td>
+							<td class='tg-03to'>dericks@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Mahipal singh Kulariya<br></td>
+							<td class='tg-03to'>T18109@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8714271478</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
 
-			</style>
-		<table class="tg">
-		  	<tr>
-			  <td class='tg-i6ua'>Name of Club<br></td>
-			  <td class='tg-03to'>Club Coordinator<br></td>
-			  <td class='tg-03to'>E-mail Id</td>
-			  <td class='tg-03to'>Contact No.</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Faculty Advisors</td>
-			  <td class='tg-03to'>E-mail ID</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Robotronics Club<br></td>
-			  <td class='tg-03to'>Manpreet <br></td>
-			  <td class='tg-03to'>b17091@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>7009769644</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Srikant Srinivasan</td>
-			  <td class='tg-03to'>srikant@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Karan Ankit<br></td>
-			  <td class='tg-03to'>b18159@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>8434934890</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Piyush Goyal<br></td>
-			  <td class='tg-03to'>b18077@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9354556594</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Programming Club<br></td>
-			  <td class='tg-03to'>Vipul Sharma<br></td>
-			  <td class='tg-03to'>b17069@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9418322955</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Sriram K</td>
-			  <td class='tg-03to'>sriramk@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Dheeraj Yadav<br></td>
-			  <td class='tg-03to'>b17041@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>8527510168</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Yantrik Club<br></td>
-			  <td class='tg-03to'>Ankit Sejwar<br></td>
-			  <td class='tg-03to'>b17115@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9109390398</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Gaurav Bhutani</td>
-			  <td class='tg-03to'>gaurav@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Rachit Katewa<br></td>
-			  <td class='tg-03to'>null@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>8619998692</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Pradeep Kumar</td>
-			  <td class='tg-03to'>pradeepkumar@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Abhishek Singh<br></td>
-			  <td class='tg-03to'>b18156@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>8130730661</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>E-Cell<br></td>
-			  <td class='tg-03to'>Ishan Dahiya <br></td>
-			  <td class='tg-03to'>b18059@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>8398084949</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Satvasheel Ramesh Powar</td>
-			  <td class='tg-03to'>satvasheel@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Prakhar Uniyal<br></td>
-			  <td class='tg-03to'>b18128@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>8318631214</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Satvasheel Ramesh Powar</td>
-			  <td class='tg-03to'>Satvasheel@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Space, Technology and Astronomy Cell (STAC)<br></td>
-			  <td class='tg-03to'>Abhijeet Manhas<br></td>
-			  <td class='tg-03to'>b18043@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>8628963924</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Arnav Bhavsar</td>
-			  <td class='tg-03to'>arnav@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Space, Technology and Astronomy Cell (STAC)<br></td>
-			  <td class='tg-03to'>Yash Bansod<br></td>
-			  <td class='tg-03to'>b18095@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9816789676</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Arnav Bhavsar</td>
-			  <td class='tg-03to'>arnav@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Shreya Lanjewar<br></td>
-			  <td class='tg-03to'>b17142@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9834340089</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Society of Automotive Engineers (SAE) Collegiate<br></td>
-			  <td class='tg-03to'>Aditya Nautiyal<br></td>
-			  <td class='tg-03to'>b17111@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>7807104946</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Arpan Gupta</td>
-			  <td class='tg-03to'>agupta@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Neelotpal Dutta<br></td>
-			  <td class='tg-03to'>b16106@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>7807104946</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Atul Dhar</td>
-			  <td class='tg-03to'>add@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Association for Computing Machinery (ACM) Chapter<br></td>
-			  <td class='tg-03to'>Swapnil Rustagi<br></td>
-			  <td class='tg-03to'>B17104@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9999862893</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Padmanabhan Rajan</td>
-			  <td class='tg-03to'>padman@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Tanmay Rustagi<br></td>
-			  <td class='tg-03to'>b17028@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>7807557706</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Varun Singh<br></td>
-			  <td class='tg-03to'>b17110@students.iitmandi.ac</td>
-			  <td class='tg-03to'>8628907720</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Nirmaan Club<br></td>
-			  <td class='tg-03to'>Bhanu Singh<br></td>
-			  <td class='tg-03to'>b16128@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>7807104913</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Dericks Shukla</td>
-			  <td class='tg-03to'>dericks@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Hardeep Malik<br></td>
-			  <td class='tg-03to'>b16131@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9999559836</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Raj Kumar Sharma<br></td>
-			  <td class='tg-03to'>b17021@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9113188264</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-		  
-		  <!-- IEEE -->
-		  <tr>
-		    <td class="tg-i6ua">IEEE Chapter</td>
-		    <td class="tg-03to">Suryavanshi Virendrasingh</td>
-		    <td class="tg-03to">b16037@students.iitmandi.ac.in</td>
-		    <td class="tg-03to">7359969539</td>
-		    <td class="tg-03to"></td>
-		    <td class="tg-kr4b">Dr. Ankush Bag</td>
-		    <td class="tg-03to">ankushbag@iitmandi.ac.in</td>
-		  </tr>
-		  <tr>
-		    <td class="tg-i6c6"></td>
-		    <td class="tg-k4q0"></td>
-		    <td class="tg-k4q0"></td>
-		    <td class="tg-k4q0"></td>
-		    <td class="tg-k4q0"></td>
-		    <td class="tg-k4q0"></td>
-		    <td class="tg-k4q0"></td>
-		  </tr>
-		  
-		  <!-- SCRI 
+						<!-- IEEE -->
+						<tr>
+							<td class="tg-i6ua">IEEE Chapter</td>
+							<td class="tg-03to">Suryavanshi Virendrasingh</td>
+							<td class="tg-03to">b16037@students.iitmandi.ac.in</td>
+							<td class="tg-03to">7359969539</td>
+							<td class="tg-03to"></td>
+							<td class="tg-kr4b">Dr. Ankush Bag</td>
+							<td class="tg-03to">ankushbag@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class="tg-i6c6"></td>
+							<td class="tg-k4q0"></td>
+							<td class="tg-k4q0"></td>
+							<td class="tg-k4q0"></td>
+							<td class="tg-k4q0"></td>
+							<td class="tg-k4q0"></td>
+							<td class="tg-k4q0"></td>
+						</tr>
+
+						<!-- SCRI 
 		  <tr>
 		    <td class="tg-49q9">SCRI</td>
 		    <td class="tg-cver">Akshat Gupta<br></td>
@@ -499,696 +613,903 @@
 		    <td class="tg-03to"></td>
 		  </tr> -->
 
-		</table>
-		</div>
-		  </section>
-		    
-		  <section id="content2">
-		        <div align="center"><p>Cultural Society : Dr.Bhakti Joshi (Advisor) , Dr.Puran Singh (Co-Advisor)</p>
+					</table>
+				</div>
+			</section>
 
-		    <style type="text/css">
-		.tg  {border-collapse:collapse;border-spacing:0;}
-		.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-		.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-		.tg .tg-prof{font-weight:bold;font-size:16px;font-family:"Times New Roman", Times, serif !important;;text-align:center}
-		.tg .tg-jye2{font-size:13px;font-family:Georgia, serif !important;;text-align:center}
-		.tg .tg-8x98{font-size:13px;font-family:Georgia, serif !important;}
-		.tg .tg-4z65{font-style:italic;font-size:13px;font-family:Georgia, serif !important;}
-		</style>
-		<table class="tg">
-		  	<tr>
-			  <td class='tg-i6ua'>Name of Club<br></td>
-			  <td class='tg-03to'>Club Coordinator<br></td>
-			  <td class='tg-03to'>E-mail Id</td>
-			  <td class='tg-03to'>Contact No.</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Faculty Advisors</td>
-			  <td class='tg-03to'>E-mail ID</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Dance club<br></td>
-			  <td class='tg-03to'>Aman Maheshwari<br></td>
-			  <td class='tg-03to'>b18003@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9462617140</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>-</td>
-			  <td class='tg-03to'>-</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Misha Sagar<br></td>
-			  <td class='tg-03to'>b18018@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>7666049974</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>-</td>
-			  <td class='tg-03to'>-</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Music Club<br></td>
-			  <td class='tg-03to'>Kshitiz Jain<br></td>
-			  <td class='tg-03to'>b18065@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>8949140091</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Puran Singh</td>
-			  <td class='tg-03to'>puran@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-				<td class='tg-i6ua'><br></td>
-				<td class='tg-03to'>Saatwik chugh<br></td>
-				<td class='tg-03to'>b18084@students.iitmandi.ac.in</td>
-				<td class='tg-03to'>9816781755</td>
-				<td class='tg-03to'></td>
-				<td class='tg-kr4b'></td>
-				<td class='tg-03to'></td>
-			  </tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Perception(Video making Club)<br></td>
-			  <td class='tg-03to'>vaibhav sharma<br></td>
-			  <td class='tg-03to'>b17108@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>8221005307</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Siddharth Sarma</td>
-			  <td class='tg-03to'>pmcadmin@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Tushar Tyagi<br></td>
-			  <td class='tg-03to'>b17106@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>7982610430</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'>pmcadmin@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Shutterbugs(Photography Club)<br></td>
-			  <td class='tg-03to'>Satyam Shukla<br></td>
-			  <td class='tg-03to'>b17058@students.iitmandi.ac</td>
-			  <td class='tg-03to'>9630262761</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Siddhartha Sarma</td>
-			  <td class='tg-03to'>pmcadmin@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Parimal Kumar<br></td>
-			  <td class='tg-03to'>b16134@students.iitmandi.ac</td>
-			  <td class='tg-03to'>8219447698</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-				<td class='tg-i6ua'><br></td>
-				<td class='tg-03to'>Hemraj Parmar<br></td>
-				<td class='tg-03to'>b18116@students.iitmandi.ac</td>
-				<td class='tg-03to'>9426870760</td>
-				<td class='tg-03to'></td>
-				<td class='tg-kr4b'></td>
-				<td class='tg-03to'></td>
-			  </tr>
-			  <tr>
-				<td class='tg-i6ua'><br></td>
-				<td class='tg-03to'>Animesh chaudhary<br></td>
-				<td class='tg-03to'>b18006@students.iitmandi.ac</td>
-				<td class='tg-03to'>6378170879</td>
-				<td class='tg-03to'></td>
-				<td class='tg-kr4b'></td>
-				<td class='tg-03to'></td>
-			  </tr>
-			  <tr>
-				<td class='tg-i6ua'><br></td>
-				<td class='tg-03to'>Raman Soni<br></td>
-				<td class='tg-03to'>b18134@students.iitmandi.ac</td>
-				<td class='tg-03to'>9461406697</td>
-				<td class='tg-03to'></td>
-				<td class='tg-kr4b'></td>
-				<td class='tg-03to'></td>
-			  </tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Drama Club<br></td>
-			  <td class='tg-03to'>Nakul Yadav<br></td>
-			  <td class='tg-03to'>b17095@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>8718939979</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Puran singh</td>
-			  <td class='tg-03to'>puran@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Art Geeks<br></td>
-			  <td class='tg-03to'>Deepti Singh<br></td>
-			  <td class='tg-03to'>b18110@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9910901283</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Astrid Kiehn</td>
-			  <td class='tg-03to'>astrid@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Yash Chaudhary<br></td>
-			  <td class='tg-03to'>b18094@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9116049105</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Designauts<br></td>
-			  <td class='tg-03to'>Awantika Singh<br></td>
-			  <td class='tg-03to'>b18163@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9816779178</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-		 
-		</table>
-		</div>
-		  </section>
-		    
-		  <section id="content3">
-		    <div align="center"><p>Literary Society Faculty Advisor : Dr. Surya Kumar Upadhyay ( surya@iitmandi.ac.in)</p>
+			<section id="content2">
+				<div align="center">
+					<p>Cultural Society : Dr.Puran Singh (Advisor)</p>
 
-		    <style type="text/css">
-		.tg  {border-collapse:collapse;border-spacing:0;}
-		.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-		.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-		.tg .tg-prof{font-weight:bold;font-size:16px;font-family:"Times New Roman", Times, serif !important;;text-align:center}
-		.tg .tg-jye2{font-size:13px;font-family:Georgia, serif !important;;text-align:center}
-		.tg .tg-8x98{font-size:13px;font-family:Georgia, serif !important;}
-		.tg .tg-4z65{font-style:italic;font-size:13px;font-family:Georgia, serif !important;}
-		</style>
-		<table class="tg">
+					<style type="text/css">
+						.tg {
+							border-collapse: collapse;
+							border-spacing: 0;
+						}
 
-		  	<tr>
-			  <td class='tg-i6ua'>Name of Club<br></td>
-			  <td class='tg-03to'>Club Coordinator<br></td>
-			  <td class='tg-03to'>E-mail Id</td>
-			  <td class='tg-03to'>Contact No.</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Debating Club<br></td>
-			  <td class='tg-03to'>Akshita Jain<br></td>
-			  <td class='tg-03to'>b17004@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>918209368122</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Writing Club<br></td>
-			  <td class='tg-03to'>Namrata Malkani<br></td>
-			  <td class='tg-03to'>b17096@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>918353064407</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Quizzing Club<br></td>
-			  <td class='tg-03to'>Arush Saxena <br></td>
-			  <td class='tg-03to'>b17118@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>919816779401</td>
-			</tr>
+						.tg td {
+							font-family: Arial, sans-serif;
+							font-size: 14px;
+							padding: 10px 5px;
+							border-style: solid;
+							border-width: 1px;
+							overflow: hidden;
+							word-break: normal;
+						}
 
-		 
-		</table>
-		</div>
-		  </section>
-		    
-		  <section id="content4">
-		    <div align="center">
-		      <p>Sports Society : Dr. Deepak Swami (Advisor) , Dr. Shyamashree Dasgupta (Co-Advisor)</p>
-		    <style type="text/css">
-		.tg  {border-collapse:collapse;border-spacing:0;}
-		.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-		.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-		.tg .tg-prof{font-weight:bold;font-size:16px;font-family:"Times New Roman", Times, serif !important;;text-align:center}
-		.tg .tg-jye2{font-size:13px;font-family:Georgia, serif !important;;text-align:center}
-		.tg .tg-8x98{font-size:13px;font-family:Georgia, serif !important;}
-		.tg .tg-49q9{font-size:13px;font-family:Georgia, serif !important;;text-align:center;vertical-align:top}
-		.tg .tg-cver{font-size:13px;font-family:Georgia, serif !important;;vertical-align:top}
-		.tg .tg-yw4l{vertical-align:top}
-		</style>
-		<table class="tg">
-		  	<tr>
-			  <td class='tg-i6ua'>Name of Sports<br></td>
-			  <td class='tg-03to'>Sports Representative<br></td>
-			  <td class='tg-03to'>E-mail ID</td>
-			  <td class='tg-03to'>Contact No.</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Cricket<br></td>
-			  <td class='tg-03to'>Yash Paliwal<br></td>
-			  <td class='tg-03to'>B17149@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9511551066</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Hockey<br></td>
-			  <td class='tg-03to'>Purushottam Goel<br></td>
-			  <td class='tg-03to'>B17135@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>8628908055</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Football<br></td>
-			  <td class='tg-03to'>Mohit Kumar<br></td>
-			  <td class='tg-03to'>B17129@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>8851536429</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Badminton<br></td>
-			  <td class='tg-03to'>Surender Kumar<br></td>
-			  <td class='tg-03to'>B16148@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>7807113702</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Table Tennis(Boys)<br></td>
-			  <td class='tg-03to'>Roshan Sharma<br></td>
-			  <td class='tg-03to'>B17054@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>8219173241</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Table Tennis(Girls)<br></td>
-			  <td class='tg-03to'>Shruti Kaushik<br></td>
-			  <td class='tg-03to'>D15043@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>7807221464</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Volleyball<br></td>
-			  <td class='tg-03to'>Ajay<br></td>
-			  <td class='tg-03to'>B17112@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9466653685</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Athletics<br></td>
-			  <td class='tg-03to'>Deepak Kumar<br></td>
-			  <td class='tg-03to'>V15004@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9736260202</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Basketball (boys)<br></td>
-			  <td class='tg-03to'>Shubham Shah<br></td>
-			  <td class='tg-03to'>b17144@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>7560078773</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Basketball (girls)<br></td>
-			  <td class='tg-03to'>Komal Mahale<br></td>
-			  <td class='tg-03to'>b17089@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9763836367</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Lawn Tennis (Boys)<br></td>
-			  <td class='tg-03to'>Abhimanyu<br></td>
-			  <td class='tg-03to'>D15014@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9419216340</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Lawn Tennis (Girls)<br></td>
-			  <td class='tg-03to'>Margi Gajjar<br></td>
-			  <td class='tg-03to'>s18011@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>8980676546</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Athletics <br></td>
-			  <td class='tg-03to'>Gaurav Nirmal <br></td>
-			  <td class='tg-03to'>b17085@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'>9079239052</td>
-			</tr>
+						.tg th {
+							font-family: Arial, sans-serif;
+							font-size: 14px;
+							font-weight: normal;
+							padding: 10px 5px;
+							border-style: solid;
+							border-width: 1px;
+							overflow: hidden;
+							word-break: normal;
+						}
 
-		</table>
-		</div>
-		  </section>
+						.tg .tg-prof {
+							font-weight: bold;
+							font-size: 16px;
+							font-family: "Times New Roman", Times, serif !important;
+							;
+							text-align: center
+						}
 
-		  <section id="content5">
-		    <div align="center">
-		      
-		    <style type="text/css">
-		.tg  {border-collapse:collapse;border-spacing:0;}
-		.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-		.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-		.tg .tg-prof{font-weight:bold;font-size:16px;font-family:"Times New Roman", Times, serif !important;;text-align:center}
-		.tg .tg-jye2{font-size:13px;font-family:Georgia, serif !important;;text-align:center}
-		.tg .tg-8x98{font-size:13px;font-family:Georgia, serif !important;}
-		.tg .tg-49q9{font-size:13px;font-family:Georgia, serif !important;;text-align:center;vertical-align:top}
-		.tg .tg-cver{font-size:13px;font-family:Georgia, serif !important;;vertical-align:top}
-		.tg .tg-yw4l{vertical-align:top}
-		</style>
-		<table class="tg">
-		  	<tr>
-			  <td class='tg-i6ua'>Hostel<br></td>
-			  <td class='tg-03to'>Hostel Secretary<br></td>
-			  <td class='tg-03to'>Post</td>
-			  <td class='tg-03to'>Email ID</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Warden & Asst. Warden</td>
-			  <td class='tg-03to'>E-mail ID</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Chandrataal<br></td>
-			  <td class='tg-03to'>Mahima Choudhary<br></td>
-			  <td class='tg-03to'>General Secretary</td>
-			  <td class='tg-03to'>b17090@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Shyamasree Dasgupta</td>
-			  <td class='tg-03to'>shyamasree@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Ankita Mathur<br></td>
-			  <td class='tg-03to'>Sports Secretary</td>
-			  <td class='tg-03to'>ankita_mathur@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Divya Verma<br></td>
-			  <td class='tg-03to'>Mess Secretary</td>
-			  <td class='tg-03to'>d16057@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Mousumi Mukherjee</td>
-			  <td class='tg-03to'>renumr@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Deeksha Singh<br></td>
-			  <td class='tg-03to'>Cultural Secretary</td>
-			  <td class='tg-03to'>b18109@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Nako<br></td>
-			  <td class='tg-03to'>Aryan Singh<br></td>
-			  <td class='tg-03to'>General Secretary</td>
-			  <td class='tg-03to'>B17010@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr.Arnav Bhavsar</td>
-			  <td class='tg-03to'>arnav@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Gaurav Arora<br></td>
-			  <td class='tg-03to'>Sports Secretary</td>
-			  <td class='tg-03to'>B12066@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Sonu Chillar<br></td>
-			  <td class='tg-03to'>Mess Secretary</td>
-			  <td class='tg-03to'>D15009@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr.Deepak Swami</td>
-			  <td class='tg-03to'>deepak@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Rishabh Dharmani<br></td>
-			  <td class='tg-03to'>Cultural Secretary</td>
-			  <td class='tg-03to'>B17099@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Prashar<br></td>
-			  <td class='tg-03to'>Vaibhav Mongia<br></td>
-			  <td class='tg-03to'>General Secretary</td>
-			  <td class='tg-03to'>B18198@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr.Muslim Malik</td>
-			  <td class='tg-03to'>muslim@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Vikash kumar Verma<br></td>
-			  <td class='tg-03to'>Sports Secretary</td>
-			  <td class='tg-03to'>B18034@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Piyush Goyal<br></td>
-			  <td class='tg-03to'>Mess Secretary</td>
-			  <td class='tg-03to'>B18077@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr.Kaustuv Mukherjee</td>
-			  <td class='tg-03to'>kaustuv@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Parth Aggrawal<br></td>
-			  <td class='tg-03to'>Cultural Secretary</td>
-			  <td class='tg-03to'>B18183@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Suvalsar<br></td>
-			  <td class='tg-03to'>Amol Agrawal <br></td>
-			  <td class='tg-03to'>General Secretary</td>
-			  <td class='tg-03to'>B17075@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr.Sunny Zafar</td>
-			  <td class='tg-03to'>sunnyzafar@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Vishal Verma <br></td>
-			  <td class='tg-03to'>Sports Secretary</td>
-			  <td class='tg-03to'>B18152@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Anand Singh<br></td>
-			  <td class='tg-03to'>Mess Secretary</td>
-			  <td class='tg-03to'>T17002@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'>Dr. Aditya Nigam</td>
-			  <td class='tg-03to'>aditya@iitmandi.ac.in</td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Aditya Mantri<br></td>
-			  <td class='tg-03to'>Cultural Secretary</td>
-			  <td class='tg-03to'>B17001@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'><br></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'>Beas Kund <br></td>
-			  <td class='tg-03to'>Abhinav Dixit<br></td>
-			  <td class='tg-03to'>General Secretary</td>
-			  <td class='tg-03to'>b16003@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Rohit Kaushal <br></td>
-			  <td class='tg-03to'>Cultural Secretary</td>
-			  <td class='tg-03to'>b16028@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Rocky Verma<br></td>
-			  <td class='tg-03to'>Sports Secretary</td>
-			  <td class='tg-03to'>b16141@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
-			<tr>
-			  <td class='tg-i6ua'><br></td>
-			  <td class='tg-03to'>Amit Rajain<br></td>
-			  <td class='tg-03to'>Mess Secretary</td>
-			  <td class='tg-03to'>b16009@students.iitmandi.ac.in</td>
-			  <td class='tg-03to'></td>
-			  <td class='tg-kr4b'></td>
-			  <td class='tg-03to'></td>
-			</tr>
+						.tg .tg-jye2 {
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+							;
+							text-align: center
+						}
 
-		</table>
-		</div>
-		  </section>
-		    
-		 
-		  
+						.tg .tg-8x98 {
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+						}
+
+						.tg .tg-4z65 {
+							font-style: italic;
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+						}
+					</style>
+					<table class="tg">
+						<tr>
+							<td class='tg-i6ua'>Name of Club<br></td>
+							<td class='tg-03to'>Club Coordinator<br></td>
+							<td class='tg-03to'>E-mail Id</td>
+							<td class='tg-03to'>Contact No.</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Faculty Advisors</td>
+							<td class='tg-03to'>E-mail ID</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Dance club<br></td>
+							<td class='tg-03to'>Aman Maheshwari<br></td>
+							<td class='tg-03to'>b18003@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9462617140</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>-</td>
+							<td class='tg-03to'>-</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Misha Sagar<br></td>
+							<td class='tg-03to'>b18018@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>7666049974</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>-</td>
+							<td class='tg-03to'>-</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Music Club<br></td>
+							<td class='tg-03to'>Kshitiz Jain<br></td>
+							<td class='tg-03to'>b18065@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8949140091</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Puran Singh</td>
+							<td class='tg-03to'>puran@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Saatwik chugh<br></td>
+							<td class='tg-03to'>b18084@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9816781755</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Perception(Video making Club)<br></td>
+							<td class='tg-03to'>vaibhav sharma<br></td>
+							<td class='tg-03to'>b17108@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8221005307</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Siddharth Sarma</td>
+							<td class='tg-03to'>pmcadmin@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Tushar Tyagi<br></td>
+							<td class='tg-03to'>b17106@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>7982610430</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'>pmcadmin@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Shutterbugs(Photography Club)<br></td>
+							<td class='tg-03to'>Satyam Shukla<br></td>
+							<td class='tg-03to'>b17058@students.iitmandi.ac</td>
+							<td class='tg-03to'>9630262761</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Siddhartha Sarma</td>
+							<td class='tg-03to'>pmcadmin@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Parimal Kumar<br></td>
+							<td class='tg-03to'>b16134@students.iitmandi.ac</td>
+							<td class='tg-03to'>8219447698</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Hemraj Parmar<br></td>
+							<td class='tg-03to'>b18116@students.iitmandi.ac</td>
+							<td class='tg-03to'>9426870760</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Animesh chaudhary<br></td>
+							<td class='tg-03to'>b18006@students.iitmandi.ac</td>
+							<td class='tg-03to'>6378170879</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Raman Soni<br></td>
+							<td class='tg-03to'>b18134@students.iitmandi.ac</td>
+							<td class='tg-03to'>9461406697</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Drama Club<br></td>
+							<td class='tg-03to'>Nakul Yadav<br></td>
+							<td class='tg-03to'>b17095@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8718939979</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Puran singh</td>
+							<td class='tg-03to'>puran@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Art Geeks<br></td>
+							<td class='tg-03to'>Deepti Singh<br></td>
+							<td class='tg-03to'>b18110@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9910901283</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Astrid Kiehn</td>
+							<td class='tg-03to'>astrid@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Yash Chaudhary<br></td>
+							<td class='tg-03to'>b18094@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9116049105</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Designauts<br></td>
+							<td class='tg-03to'>Awantika Singh<br></td>
+							<td class='tg-03to'>b18163@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9816779178</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+
+					</table>
+				</div>
+			</section>
+
+			<section id="content3">
+				<div align="center">
+					<p>Literary Society Faculty Advisor : Dr. Surya Kumar Upadhyay ( surya@iitmandi.ac.in)</p>
+
+					<style type="text/css">
+						.tg {
+							border-collapse: collapse;
+							border-spacing: 0;
+						}
+
+						.tg td {
+							font-family: Arial, sans-serif;
+							font-size: 14px;
+							padding: 10px 5px;
+							border-style: solid;
+							border-width: 1px;
+							overflow: hidden;
+							word-break: normal;
+						}
+
+						.tg th {
+							font-family: Arial, sans-serif;
+							font-size: 14px;
+							font-weight: normal;
+							padding: 10px 5px;
+							border-style: solid;
+							border-width: 1px;
+							overflow: hidden;
+							word-break: normal;
+						}
+
+						.tg .tg-prof {
+							font-weight: bold;
+							font-size: 16px;
+							font-family: "Times New Roman", Times, serif !important;
+							;
+							text-align: center
+						}
+
+						.tg .tg-jye2 {
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+							;
+							text-align: center
+						}
+
+						.tg .tg-8x98 {
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+						}
+
+						.tg .tg-4z65 {
+							font-style: italic;
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+						}
+					</style>
+					<table class="tg">
+
+						<tr>
+							<td class='tg-i6ua'>Name of Club<br></td>
+							<td class='tg-03to'>Club Coordinator<br></td>
+							<td class='tg-03to'>E-mail Id</td>
+							<td class='tg-03to'>Contact No.</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Debating Club<br></td>
+							<td class='tg-03to'>Naman Tayal<br></td>
+							<td class='tg-03to'>B18123@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9033263810</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br>Pradyumna Pratap Singh</td>
+							<td class='tg-03to'>B18184@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8058166282</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Writing Club<br></td>
+							<td class='tg-03to'>Shikha Chaudhary<br></td>
+							<td class='tg-03to'>B18193@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>7800955914</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br>Vinayak Kuthiala</td>
+							<td class='tg-03to'>B16039@student.iitmandi.ac.in</td>
+							<td class='tg-03to'>9418017852
+							</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Quizzing Club<br></td>
+							<td class='tg-03to'>Param Kashyap <br></td>̥
+							<td class='tg-03to'>B16098@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9420634052</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Pranjal Soni<br></td>
+							<td class='tg-03to'>B18186@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>6378081252</td>
+						</tr>
+
+
+					</table>
+				</div>
+			</section>
+
+			<section id="content4">
+				<div align="center">
+					<p>Sports Society : Dr. Deepak Swami (Advisor) , Dr. Shyamashree Dasgupta (Co-Advisor)</p>
+					<style type="text/css">
+						.tg {
+							border-collapse: collapse;
+							border-spacing: 0;
+						}
+
+						.tg td {
+							font-family: Arial, sans-serif;
+							font-size: 14px;
+							padding: 10px 5px;
+							border-style: solid;
+							border-width: 1px;
+							overflow: hidden;
+							word-break: normal;
+						}
+
+						.tg th {
+							font-family: Arial, sans-serif;
+							font-size: 14px;
+							font-weight: normal;
+							padding: 10px 5px;
+							border-style: solid;
+							border-width: 1px;
+							overflow: hidden;
+							word-break: normal;
+						}
+
+						.tg .tg-prof {
+							font-weight: bold;
+							font-size: 16px;
+							font-family: "Times New Roman", Times, serif !important;
+							;
+							text-align: center
+						}
+
+						.tg .tg-jye2 {
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+							;
+							text-align: center
+						}
+
+						.tg .tg-8x98 {
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+						}
+
+						.tg .tg-49q9 {
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+							;
+							text-align: center;
+							vertical-align: top
+						}
+
+						.tg .tg-cver {
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+							;
+							vertical-align: top
+						}
+
+						.tg .tg-yw4l {
+							vertical-align: top
+						}
+					</style>
+					<table class="tg">
+						<tr>
+							<td class='tg-i6ua'>Name of Sports<br></td>
+							<td class='tg-03to'>Sports Representative<br></td>
+							<td class='tg-03to'>E-mail ID</td>
+							<td class='tg-03to'>Contact No.</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Cricket<br></td>
+							<td class='tg-03to'>Yash Paliwal<br></td>
+							<td class='tg-03to'>B17149@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9511551066</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Hockey<br></td>
+							<td class='tg-03to'>Purushottam Goel<br></td>
+							<td class='tg-03to'>B17135@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8628908055</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Football<br></td>
+							<td class='tg-03to'>Mohit Kumar<br></td>
+							<td class='tg-03to'>B17129@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8851536429</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Badminton<br></td>
+							<td class='tg-03to'>Surender Kumar<br></td>
+							<td class='tg-03to'>B16148@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>7807113702</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Table Tennis(Boys)<br></td>
+							<td class='tg-03to'>Roshan Sharma<br></td>
+							<td class='tg-03to'>B17054@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8219173241</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Table Tennis(Girls)<br></td>
+							<td class='tg-03to'>Shruti Kaushik<br></td>
+							<td class='tg-03to'>D15043@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>7807221464</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Volleyball<br></td>
+							<td class='tg-03to'>Ajay<br></td>
+							<td class='tg-03to'>B17112@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9466653685</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Athletics<br></td>
+							<td class='tg-03to'>Deepak Kumar<br></td>
+							<td class='tg-03to'>V15004@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9736260202</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Basketball (boys)<br></td>
+							<td class='tg-03to'>Shubham Shah<br></td>
+							<td class='tg-03to'>b17144@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>7560078773</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Basketball (girls)<br></td>
+							<td class='tg-03to'>Komal Mahale<br></td>
+							<td class='tg-03to'>b17089@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9763836367</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Lawn Tennis (Boys)<br></td>
+							<td class='tg-03to'>Abhimanyu<br></td>
+							<td class='tg-03to'>D15014@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9419216340</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Lawn Tennis (Girls)<br></td>
+							<td class='tg-03to'>Margi Gajjar<br></td>
+							<td class='tg-03to'>s18011@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>8980676546</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Athletics <br></td>
+							<td class='tg-03to'>Gaurav Nirmal <br></td>
+							<td class='tg-03to'>b17085@students.iitmandi.ac.in</td>
+							<td class='tg-03to'>9079239052</td>
+						</tr>
+
+					</table>
+				</div>
+			</section>
+
+			<section id="content5">
+				<div align="center">
+
+					<style type="text/css">
+						.tg {
+							border-collapse: collapse;
+							border-spacing: 0;
+						}
+
+						.tg td {
+							font-family: Arial, sans-serif;
+							font-size: 14px;
+							padding: 10px 5px;
+							border-style: solid;
+							border-width: 1px;
+							overflow: hidden;
+							word-break: normal;
+						}
+
+						.tg th {
+							font-family: Arial, sans-serif;
+							font-size: 14px;
+							font-weight: normal;
+							padding: 10px 5px;
+							border-style: solid;
+							border-width: 1px;
+							overflow: hidden;
+							word-break: normal;
+						}
+
+						.tg .tg-prof {
+							font-weight: bold;
+							font-size: 16px;
+							font-family: "Times New Roman", Times, serif !important;
+							;
+							text-align: center
+						}
+
+						.tg .tg-jye2 {
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+							;
+							text-align: center
+						}
+
+						.tg .tg-8x98 {
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+						}
+
+						.tg .tg-49q9 {
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+							;
+							text-align: center;
+							vertical-align: top
+						}
+
+						.tg .tg-cver {
+							font-size: 13px;
+							font-family: Georgia, serif !important;
+							;
+							vertical-align: top
+						}
+
+						.tg .tg-yw4l {
+							vertical-align: top
+						}
+					</style>
+					<table class="tg">
+						<tr>
+							<td class='tg-i6ua'>Hostel<br></td>
+							<td class='tg-03to'>Hostel Secretary<br></td>
+							<td class='tg-03to'>Post</td>
+							<td class='tg-03to'>Email ID</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Warden & Asst. Warden</td>
+							<td class='tg-03to'>E-mail ID</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Chandrataal<br></td>
+							<td class='tg-03to'>Mahima Choudhary<br></td>
+							<td class='tg-03to'>General Secretary</td>
+							<td class='tg-03to'>b17090@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Shyamasree Dasgupta</td>
+							<td class='tg-03to'>shyamasree@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Ankita Mathur<br></td>
+							<td class='tg-03to'>Sports Secretary</td>
+							<td class='tg-03to'>ankita_mathur@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Divya Verma<br></td>
+							<td class='tg-03to'>Mess Secretary</td>
+							<td class='tg-03to'>d16057@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Mousumi Mukherjee</td>
+							<td class='tg-03to'>renumr@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Deeksha Singh<br></td>
+							<td class='tg-03to'>Cultural Secretary</td>
+							<td class='tg-03to'>b18109@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Nako<br></td>
+							<td class='tg-03to'>Aryan Singh<br></td>
+							<td class='tg-03to'>General Secretary</td>
+							<td class='tg-03to'>B17010@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr.Arnav Bhavsar</td>
+							<td class='tg-03to'>arnav@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Gaurav Arora<br></td>
+							<td class='tg-03to'>Sports Secretary</td>
+							<td class='tg-03to'>B12066@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Sonu Chillar<br></td>
+							<td class='tg-03to'>Mess Secretary</td>
+							<td class='tg-03to'>D15009@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr.Deepak Swami</td>
+							<td class='tg-03to'>deepak@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Rishabh Dharmani<br></td>
+							<td class='tg-03to'>Cultural Secretary</td>
+							<td class='tg-03to'>B17099@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Prashar<br></td>
+							<td class='tg-03to'>Vaibhav Mongia<br></td>
+							<td class='tg-03to'>General Secretary</td>
+							<td class='tg-03to'>B18198@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr.Muslim Malik</td>
+							<td class='tg-03to'>muslim@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Vikash kumar Verma<br></td>
+							<td class='tg-03to'>Sports Secretary</td>
+							<td class='tg-03to'>B18034@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Piyush Goyal<br></td>
+							<td class='tg-03to'>Mess Secretary</td>
+							<td class='tg-03to'>B18077@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr.Kaustuv Mukherjee</td>
+							<td class='tg-03to'>kaustuv@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Parth Aggrawal<br></td>
+							<td class='tg-03to'>Cultural Secretary</td>
+							<td class='tg-03to'>B18183@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Suvalsar<br></td>
+							<td class='tg-03to'>Amol Agrawal <br></td>
+							<td class='tg-03to'>General Secretary</td>
+							<td class='tg-03to'>B17075@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr.Sunny Zafar</td>
+							<td class='tg-03to'>sunnyzafar@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Vishal Verma <br></td>
+							<td class='tg-03to'>Sports Secretary</td>
+							<td class='tg-03to'>B18152@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Anand Singh<br></td>
+							<td class='tg-03to'>Mess Secretary</td>
+							<td class='tg-03to'>T17002@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Dr. Aditya Nigam</td>
+							<td class='tg-03to'>aditya@iitmandi.ac.in</td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Aditya Mantri<br></td>
+							<td class='tg-03to'>Cultural Secretary</td>
+							<td class='tg-03to'>B17001@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'><br></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'>Beas Kund <br></td>
+							<td class='tg-03to'>Abhinav Dixit<br></td>
+							<td class='tg-03to'>General Secretary</td>
+							<td class='tg-03to'>b16003@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Rohit Kaushal <br></td>
+							<td class='tg-03to'>Cultural Secretary</td>
+							<td class='tg-03to'>b16028@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Rocky Verma<br></td>
+							<td class='tg-03to'>Sports Secretary</td>
+							<td class='tg-03to'>b16141@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+						<tr>
+							<td class='tg-i6ua'><br></td>
+							<td class='tg-03to'>Amit Rajain<br></td>
+							<td class='tg-03to'>Mess Secretary</td>
+							<td class='tg-03to'>b16009@students.iitmandi.ac.in</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'></td>
+							<td class='tg-03to'></td>
+						</tr>
+
+					</table>
+				</div>
+			</section>
+
+
+
 		</main>
 
 
@@ -1199,11 +1520,15 @@
 					<div class="col-md-8">
 						<div class="probootstrap-footer-widget">
 							<h3>About Student Gymkhana</h3>
-							<p>Student Gymkhana -IIT Mandi was established in 2011 and since then it has been instrumental in the growth and development of the Institute and its students through its elected secretaries. Student Gymkhana-IIT Mandi consists of eight
-								secretaries all organizing collective student activities in their respective spheres.</p>
+							<p>Student Gymkhana -IIT Mandi was established in 2011 and since then it has been
+								instrumental in the growth and development of the Institute and its students through its
+								elected secretaries. Student Gymkhana-IIT Mandi consists of eight
+								secretaries all organizing collective student activities in their respective spheres.
+							</p>
 							<h3>Social</h3>
 							<ul class="probootstrap-footer-social">
-								<li><a href="https://www.facebook.com/gymkhanaiitmandi/"><i class="icon-facebook"></i></a></li>
+								<li><a href="https://www.facebook.com/gymkhanaiitmandi/"><i
+											class="icon-facebook"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -1232,4 +1557,5 @@
 	<script src="js/custom.js"></script>
 
 </body>
+
 </html>
