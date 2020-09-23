@@ -51,7 +51,7 @@
 
 		main {
 			min-width: 320px;
-			max-width: 900px;
+			max-width: 965px;
 			padding: 50px;
 			margin: 0 auto;
 			background: #fff;
@@ -82,6 +82,12 @@
 		}
 
 		#content5 {
+			display: none;
+			padding: 20px 0 0;
+			border-top: 1px solid #ddd;
+		}
+
+		#content6 {
 			display: none;
 			padding: 20px 0 0;
 			border-top: 1px solid #ddd;
@@ -123,7 +129,8 @@
 		#tab2:checked~#content2,
 		#tab3:checked~#content3,
 		#tab4:checked~#content4,
-		#tab5:checked~#content5 {
+		#tab5:checked~#content5,
+		#tab6:checked~#content6 {
 			display: block;
 		}
 
@@ -217,6 +224,9 @@
 
 			<input id="tab5" type="radio" name="tabs">
 			<label for="tab5">Hostels</label>
+
+			<input id="tab6" type="radio" name="tabs">
+			<label for="tab6">Research</label>
 
 			<style type="text/css">
 				.tg {
@@ -1194,6 +1204,24 @@
 							<td class='tg-03to'></td>
 						</tr>
 
+					</table>
+				</div>
+			</section>
+
+
+			<section id="content6">
+				<div align="center">
+
+					<table class="tg">
+						<tr>
+							<td class='tg-i6ua'>Name of Club<br></td>
+							<td class='tg-03to'>Club Coordinator<br></td>
+							<td class='tg-03to'>E-mail Id</td>
+							<td class='tg-03to'>Contact No.</td>
+							<td class='tg-03to'></td>
+							<td class='tg-kr4b'>Faculty Advisors</td>
+							<td class='tg-03to'>E-mail ID</td>
+						</tr>
 					</table>
 				</div>
 			</section>
