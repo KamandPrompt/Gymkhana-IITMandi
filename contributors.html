@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Gymkhana | IIT Mandi</title>
+  <meta name="description" content="Official Website for Student Gymkhana of IIT Mandi">
+  <meta name="keywords" content="iit mandi, gymkhana, council, students, clubs">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles-merged.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+</head>
+
+<body>
+
+  <div class="probootstrap-page-wrapper">
+    <nav class="navbar navbar-default probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+            aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" title="Gymkhana">StudentGymkhana-IITMandi</a>
+        </div>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="technical.html">Technical</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="cultural.html">Cultural</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="literary.html">Literary</a></li>
+            <li><a href="hostel.html">Hostel</a></li>
+            <li><a href="senate.html">Senate</a></li>
+            <li class="dropdown2">
+
+              <a href="#">More</a>
+              <div class="dropdown-content">
+                <a href="wall_of_fame.html">Wall of Fame</a>
+                ---
+                <a href="contributors.html">Contributors</a>
+                ---
+                <a href="contacts.html">Contacts</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="probootstrap-section probootstrap-section-colored">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-left section-heading probootstrap-animate">
+            <h2>Contributions</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="probootstrap-section probootstrap-section-sm">
+      <div class="container">
+
+        <h2 class="text-center">Current Maintainer - Signior-X</h2>
+
+        <!-- Contributors list -->
+        <div class="row" id="contributors-container"></div>
+
+      </div>
+    </section>
+
+    <footer class="probootstrap-footer probootstrap-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="probootstrap-footer-widget">
+              <h3>About Student Gymkhana</h3>
+              <p>Student Gymkhana -IIT Mandi was established in 2011 and since then it has been instrumental in the
+                growth and development of the Institute and its students through its elected secretaries. Student
+                Gymkhana-IIT Mandi consists of eight
+                secretaries all organizing collective student activities in their respective spheres.</p>
+              <h3>Social</h3>
+              <ul class="probootstrap-footer-social">
+                <li><a href="https://www.facebook.com/gymkhanaiitmandi/"><i class="icon-facebook"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-md-push-1">
+            <div class="probootstrap-footer-widget">
+              <h3>Links</h3>
+              <ul>
+                <li><a href="http://www.iitmandi.ac.in/">IIT Mandi</a></li>
+                <li><a href="http://students.iitmandi.ac.in/">Students</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- END row -->
+
+      </div>
+    </footer>
+
+  </div>
+  <!-- END wrapper -->
+
+  <script>
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function () {
+      if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+        var data = JSON.parse(xmlHttp.responseText);
+
+        var htmlElements = '';
+
+        data.forEach(element => {
+          console.log(element);
+
+          var elementString = `
+          <div class="col-sm-3">
+            <div class="probootstrap-teacher text-center">
+              <figure class="media">
+                <img src="` + element.avatar_url + `" alt="" class="img-responsive">
+              </figure>
+              <div class="text">
+                <h3> ` + element.login + ` </h3>
+                <p> ` + element.contributions + ` commits </p>
+                <ul class="probootstrap-footer-social">
+                  <li class="facebook"><a href="` + element.html_url + `"><i
+                        class="icon-github"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>`;
+
+          htmlElements += elementString;
+
+        });
+
+        document.getElementById('contributors-container').innerHTML += `
+        <div class="row">` + htmlElements + `</div>`;
+      }
+    }
+    xmlHttp.open("GET", 'https://api.github.com/repos/vsvipul/Gymkhana-IITMandi/contributors', true); // true for asynchronous 
+    xmlHttp.send(null);
+  </script>
+
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
