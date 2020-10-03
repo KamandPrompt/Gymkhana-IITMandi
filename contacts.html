@@ -593,7 +593,7 @@
 							<td class='tg-kr4b'>-</td>
 							<td class='tg-03to'>-</td>
 						</tr>
-						
+
 						<tr>
 							<td class='tg-i6ua'><br></td>
 							<td class='tg-03to'><br></td>
@@ -667,8 +667,8 @@
 							<td class='tg-kr4b'></td>
 							<td class='tg-03to'></td>
 						</tr>
-						
-					
+
+
 						<tr>
 							<td class='tg-i6ua'><br></td>
 							<td class='tg-03to'><br></td>
@@ -695,7 +695,8 @@
 							<td class='tg-03to'></td>
 							<td class='tg-kr4b'>-</td>
 							<td class='tg-03to'>-</td>
-						</tr><tr>
+						</tr>
+						<tr>
 							<td class='tg-i6ua'><br></td>
 							<td class='tg-03to'>Shivani Pandey<br></td>
 							<td class='tg-03to'>b19266@students.iitmandi.ac.in</td>
@@ -703,7 +704,8 @@
 							<td class='tg-03to'></td>
 							<td class='tg-kr4b'>-</td>
 							<td class='tg-03to'>-</td>
-						</tr><tr>
+						</tr>
+						<tr>
 							<td class='tg-i6ua'><br></td>
 							<td class='tg-03to'>Aarushi Gajri<br></td>
 							<td class='tg-03to'>b19001@students.iitmandi.ac.in</td>
@@ -1308,13 +1310,35 @@
 
 			</div>
 		</footer>
- 
+
 	</div>
 	<!-- END wrapper -->
 
 	<script src="js/scripts.min.js"></script>
 	<script src="js/main.min.js"></script>
 	<script src="js/custom.js"></script>
+
+	<script>
+		// This script checks the hash value in the url and changes tab accordingly
+
+		document.addEventListener('DOMContentLoaded', function () {
+			if (location.hash === '#cultural') {
+				document.getElementById('tab2').click();
+			} else if (location.hash === '#technical') {
+				document.getElementById('tab1').click();
+			} else if (location.hash === '#literary') {
+				document.getElementById('tab3').click();
+			} else if (location.hash === '#sports') {
+				document.getElementById('tab4').click();
+			} else if (location.hash === '#hostel') {
+				document.getElementById('tab5').click();
+			} else if (location.hash === '#research') {
+				document.getElementById('tab6').click();
+			}
+
+			// Rest can be added like academic
+		});
+	</script>
 
 </body>
 
