@@ -3103,6 +3103,34 @@ a:hover, a:focus, a:active {
   z-index: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .dropdown-content {
+    left:30%;
+    bottom:-13%;
+    width:170px;      
+  }
+  
+}
+/*.animate_dropdown{
+  transform-origin: top center;
+  animation: translateX 300ms (num * 60ms) ease-in-out forwards;
+}
+@keyframes translateX {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  
+  80% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}*/
+
 .dropdown-content a{
   color: black;
   background-color: rgb(255, 255, 255);
