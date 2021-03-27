@@ -126,23 +126,42 @@
 
         data.forEach(element => {
           console.log(element);
-
-          var elementString = `
-          <div class="col-sm-3">
-            <div class="probootstrap-teacher text-center">
-              <figure class="media">
-                <img src="` + element.avatar_url + `" alt="" class="img-responsive">
-              </figure>
-              <div class="text">
-                <h3> ` + element.login + ` </h3>
-                <p> ` + element.contributions + ` commits </p>
-                <ul class="probootstrap-footer-social">
-                  <li class="facebook"><a href="` + element.html_url + `"><i
-                        class="icon-github"></i></a></li>
-                </ul>
+          var elementstring = ``
+          if(element.contributions > 1){
+            elementString = `
+            <div class="col-sm-3">
+              <div class="probootstrap-teacher text-center">
+                <figure class="media">
+                  <img src="` + element.avatar_url + `" alt="" class="img-responsive">
+                </figure>
+                <div class="text">
+                  <h3> ` + element.login + ` </h3>
+                  <p> ` + element.contributions + ` commits </p>
+                  <ul class="probootstrap-footer-social">
+                    <li class="facebook"><a href="` + element.html_url + `"><i
+                          class="icon-github"></i></a></li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </div>`;
+            </div>`;
+          } else{
+            elementString = `
+            <div class="col-sm-3">
+              <div class="probootstrap-teacher text-center">
+                <figure class="media">
+                  <img src="` + element.avatar_url + `" alt="" class="img-responsive">
+                </figure>
+                <div class="text">
+                  <h3> ` + element.login + ` </h3>
+                  <p> ` + element.contributions + ` commit </p>
+                  <ul class="probootstrap-footer-social">
+                    <li class="facebook"><a href="` + element.html_url + `"><i
+                          class="icon-github"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>`;
+          }
 
           htmlElements += elementString;
 
