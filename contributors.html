@@ -126,7 +126,12 @@
 
         data.forEach(element => {
           console.log(element);
-
+          var word = ``;
+          if(element.contributions > 1){
+            word = ` commits`
+          } else{
+            word = ` commit`
+          }
           var elementString = `
           <div class="col-sm-3">
             <div class="probootstrap-teacher text-center">
@@ -135,7 +140,7 @@
               </figure>
               <div class="text">
                 <h3> ` + element.login + ` </h3>
-                <p> ` + element.contributions + ` commits </p>
+                <p> ` + element.contributions + word + ` </p>
                 <ul class="probootstrap-footer-social">
                   <li class="facebook"><a href="` + element.html_url + `"><i
                         class="icon-github"></i></a></li>
