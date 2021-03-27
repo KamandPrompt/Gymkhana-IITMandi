@@ -135,7 +135,8 @@
               </figure>
               <div class="text">
                 <h3> ` + element.login + ` </h3>
-                <p> ` + element.contributions + ` commits </p>
+		<p> ` + element.contributions +((element.contributions==1)?` commit`:` commits`)+`</p>
+		 
                 <ul class="probootstrap-footer-social">
                   <li class="facebook"><a href="` + element.html_url + `"><i
                         class="icon-github"></i></a></li>
