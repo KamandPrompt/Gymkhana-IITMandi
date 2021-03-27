@@ -50,6 +50,19 @@ h5, h6 {
 p, ul, ol {
   margin-bottom: 30px;
 }
+.want-to-contribute-link {
+  color: rgb(214, 213, 213);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.want-to-contribute-link:hover {
+  color: #fff;
+}
+.want-to-contribute-link:active, .want-to-contribute-link:focus {
+  color: rgb(214, 213, 213);
+}
+
+
 
 a {
   -webkit-transition: .3s all;
