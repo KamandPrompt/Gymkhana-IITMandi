@@ -1,9 +1,4 @@
 {
     "editor.formatOnSave": true,
-    "editor.tabSize": 2,
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#1B3040",
-        "titleBar.activeBackground": "#264359",
-        "titleBar.activeForeground": "#F7FAFC"
-    }
+    "editor.tabSize": 2
 }
