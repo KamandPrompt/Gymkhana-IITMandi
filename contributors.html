@@ -81,6 +81,18 @@
       </div>
     </section>
 
+   <!-- Contributing button -->
+    <section class="probootstrap-section">
+     <div class=" text-center">
+       <h2>Willing to contribute?</h2>
+     </div>
+     <div
+       class="probootstrap-teacher text-center probootstrap-animate fadeInUp probootstrap-animated contributing-button">
+       <a class="" href="https://github.com/KamandPrompt/Gymkhana-IITMandi">Contribute Now</a>
+     </div>
+   </section>
+
+
     <footer class="probootstrap-footer probootstrap-bg">
       <div class="container">
         <div class="row">
@@ -138,7 +150,7 @@
               <div class="text">
                 <h3> ` + element.login + ` </h3>
 		<p> ` + element.contributions +((element.contributions==1)?` commit`:` commits`)+`</p>
-		 
+
                 <ul class="probootstrap-footer-social">
                   <li class="facebook"><a href="` + element.html_url + `" target="_blank" rel="noopener noreferrer"><i
                         class="icon-github"></i></a></li>
@@ -155,7 +167,7 @@
         <div class="row">` + htmlElements + `</div>`;
       }
     }
-    xmlHttp.open("GET", 'https://api.github.com/repos/vsvipul/Gymkhana-IITMandi/contributors', true); // true for asynchronous 
+    xmlHttp.open("GET", 'https://api.github.com/repos/vsvipul/Gymkhana-IITMandi/contributors', true); // true for asynchronous
     xmlHttp.send(null);
   </script>
 

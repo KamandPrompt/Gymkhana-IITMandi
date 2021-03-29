@@ -3108,9 +3108,9 @@ a:hover, a:focus, a:active {
   .dropdown-content {
     left:30%;
     bottom:-13%;
-    width:170px;      
+    width:170px;
   }
-  
+
 }
 /*.animate_dropdown{
   transform-origin: top center;
@@ -3121,7 +3121,7 @@ a:hover, a:focus, a:active {
     opacity: 0;
     transform: translateX(60px);
   }
-  
+
   80% {
     transform: translateX(-5px);
   }
@@ -3146,4 +3146,13 @@ a:hover, a:focus, a:active {
 
 .dropdown2:hover .dropdown-content {
   display: block;
+}
+
+.contributing-button {
+  width:25%;
+  font-size: 20px;
+  align-items: center;
+  position:relative;
+  margin: auto;
+  animation-iteration-count:1;
 }
