@@ -11,7 +11,7 @@ Website for Gymkhana - IIT Mandi
 1. After making the desired changes, add and commit your changes.
 2. Push your changes from that branch and make a PR from github.
 
-You can mention @Signior-X in the Pr description for review. Also do mention the issue number by as `#{issue-number}` in the description.
+You can mention @Signior-X or @abhijeetmanhas in the Pr description for review. Also do mention the issue number by as `#{issue-number}` in the description.
 
 for news updates :
   1. Open the news.json file in news folder.
