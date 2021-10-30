@@ -3164,6 +3164,7 @@ a:hover, a:focus, a:active {
   padding: 16px;
   font-size: 16px;
   border: none;
+  text-align: center;
 }
 
 .dropdown {
@@ -3173,7 +3174,7 @@ a:hover, a:focus, a:active {
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
