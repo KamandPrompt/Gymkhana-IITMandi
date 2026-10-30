@@ -1,0 +1,49 @@
+/* UG Academic Council page */
+.ugac-page { padding: 150px 0 64px; background: #f7f8fb; color: #283347; }
+.ugac-heading, .ugac-identity, .ugac-table-heading { display: flex; align-items: center; }
+.ugac-heading { justify-content: space-between; gap: 24px; }
+.ugac-identity { gap: 18px; }
+.ugac-identity img { width: 72px; height: 72px; object-fit: contain; mix-blend-mode: multiply; flex-shrink: 0; }
+.ugac-eyebrow { display: block; color: #788297; font: 600 11px/1.5 "Open Sans", sans-serif; letter-spacing: 1.4px; }
+.ugac-heading h1 { margin: 6px 0 0; color: #18253e; font-size: 32px; font-weight: 700; line-height: 1.2; }
+.ugac-site-link { padding: 10px 18px; border: 1px solid #d9d6ed; border-radius: 6px; font-size: 13px; font-weight: 600; white-space: nowrap; }
+.ugac-intro { max-width: 720px; margin: 22px 0 32px; color: #667085; font-size: 14px; line-height: 1.8; }
+.ugac-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); align-items: start; gap: 28px; }
+.ugac-secretary { background: white; border: 1px solid #e7eaf0; border-radius: 10px; padding: 28px 24px; }
+.ugac-avatar { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; margin-bottom: 22px; border-radius: 50%; background: #eeebf8; color: #6750a4; font-size: 18px; font-weight: 600; }
+.ugac-secretary .ugac-eyebrow { font-size: 10px; letter-spacing: 1px; }
+.ugac-secretary h2 { margin: 8px 0; font-size: 22px; font-weight: 600; color: #18253e; }
+.ugac-secretary p { font-size: 12px; line-height: 1.7; color: #788297; margin-bottom: 24px; }
+.ugac-email { display: block; border-top: 1px solid #edf0f5; padding-top: 16px; font-size: 13px; font-weight: 600; }
+.ugac-table-heading { justify-content: space-between; gap: 12px; margin: 4px 0 16px; }
+.ugac-table-heading h2 { font-size: 20px; color: #18253e; font-weight: 600; margin: 0; }
+.ugac-table-heading > span { color: #788297; font-size: 11px; }
+.ugac-table-scroll { overflow-x: auto; border: 1px solid #e7eaf0; border-radius: 8px; background: white; }
+.ugac-table { width: 100%; border-collapse: collapse; font-size: 12px; line-height: 1.5; }
+.ugac-table th { background: #f1f3f7; color: #788297; font-size: 10px; letter-spacing: .6px; text-transform: uppercase; font-weight: 600; padding: 13px 16px; white-space: nowrap; }
+.ugac-table td { padding: 13px 16px; border-top: 1px solid #edf0f5; vertical-align: middle; }
+.ugac-table td:first-child { width: 40%; color: #667085; }
+.ugac-table td:nth-child(2) { font-weight: 600; color: #283347; }
+.ugac-table td:nth-child(3) { color: #788297; font-size: 11px; white-space: nowrap; }
+.ugac-table td:last-child { white-space: nowrap; }
+.ugac-table tr:hover td { background: #faf9fd; }
+.ugac-table a { font-weight: 600; }
+@media (max-width: 991px) {
+  .ugac-page { padding-top: 110px; }
+  .ugac-layout { grid-template-columns: 1fr; gap: 24px; }
+  .ugac-secretary { padding: 22px; }
+  .ugac-avatar { float: left; margin: 0 18px 12px 0; }
+  .ugac-secretary p { margin-bottom: 16px; }
+  .ugac-email { clear: both; }
+}
+@media (max-width: 600px) {
+  .ugac-page { padding: 96px 0 36px; }
+  .ugac-heading { align-items: flex-start; flex-wrap: wrap; gap: 18px; }
+  .ugac-heading h1 { font-size: 24px; }
+  .ugac-identity { gap: 12px; }
+  .ugac-identity img { width: 52px; height: 52px; }
+  .ugac-site-link { padding: 8px 14px; }
+  .ugac-intro { margin: 20px 0 24px; font-size: 13px; }
+  .ugac-table { min-width: 580px; }
+  .ugac-table th, .ugac-table td { padding: 12px; }
+}
